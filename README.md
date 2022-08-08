@@ -1,6 +1,7 @@
 <h1>Django Recap</h1>
 
 <h3>Commands</h3>
+
 ```
 #for windows
 python -m venv env # sanal ortamımızı oluşturuyoruz
@@ -10,7 +11,9 @@ django-admin startproject main . # projemizi oluşturuyoruz
 django-admin startapp blog # app imizi oluşturuyoruz
 python manage.py runserver # uygulamayı çalıştırıyoruz
 ```
+
 <p>main adında oluşturduğumuz projemizin klasörü içinde bulunan installed apps kısmına oluşturduğumuz app imizi ekliyoruz</p>
+
 ```
 INSTALLED_APPS = [
     'django.contrib.admin',
