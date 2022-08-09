@@ -57,7 +57,9 @@ ROOT_URLCONF = 'main.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'templates',
+        ],
         'APP_DIRS': True,#bütün applerdeki templatelerin erişilebilir olmasını sağlıyor
         'OPTIONS': {
             'context_processors': [
