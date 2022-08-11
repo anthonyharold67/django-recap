@@ -5,4 +5,36 @@
 
 {% block content %}
     <h1>Blog</h1>
+    {% comment %} <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        Link with href
+      </a> {% endcomment %}
+      <div class="text-truncate">
+        This text is quite long, and will be truncated once displayed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur corrupti quidem ratione repellat aliquid? Natus deleniti ipsa placeat nisi, reprehenderit sit mollitia vel numquam odit, maxime explicabo nam. Neque culpa modi cum fugiat corrupti et ipsa non voluptas officiis quisquam unde excepturi nam qui ab eius quas voluptatibus eum eaque velit, eveniet quasi nemo? Unde rerum mollitia rem quae vitae in optio vero. Porro a reiciendis nemo! Nam maiores repellat amet distinctio quia aperiam sapiente, quaerat dolorem harum illum! Quisquam odit ipsam animi, asperiores nam hic dicta aliquam non recusandae tempora eligendi excepturi at maxime veritatis earum architecto fuga vero cupiditate odio. Nemo harum rerum quam, vitae dolorum dolore minima repudiandae quasi sed totam accusamus inventore voluptas asperiores ut possimus, exercitationem rem sint architecto, hic neque at velit libero incidunt? Fuga alias suscipit inventore necessitatibus blanditiis similique, sunt doloribus quia, ullam sit error ex! Ullam facere deserunt repudiandae itaque cum quod quaerat animi debitis labore magnam voluptas nobis illum reiciendis tenetur quidem pariatur laborum, ea soluta, error vel fuga veniam saepe id minima. Maiores mollitia tenetur, nostrum odit voluptatibus laborum adipisci modi cum, eaque quos quidem consequatur aliquid veniam possimus ipsa nam corporis temporibus! Officia, sapiente libero. Adipisci, vitae ea! Asperiores accusamus praesentium, porro eaque accusantium dolores dolore necessitatibus nesciunt eum maxime similique cupiditate cumque fuga ab earum molestias magnam deleniti fugiat dolor expedita perspiciatis blanditiis ea debitis. Deleniti quis debitis esse labore inventore fugit odit praesentium quam corrupti. Nihil neque inventore consequatur nemo sapiente autem porro repudiandae enim mollitia.
+      </div>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        Sol Menü
+      </button>
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Anthony Harold's Django Recap Notes
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Sekmeler
+            </button>
+            <ul class="dropdown-menu">
+                
+              <li><a class="dropdown-item" href="{% url 'home' %}">Home</a></li>
+              <li><a class="dropdown-item" href="#">Blogs</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 {% endblock content %}

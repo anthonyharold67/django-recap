@@ -1,4 +1,10 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+{% endblock css_files %}
+
 
 {% block title %}
     Blogs
@@ -7,4 +13,5 @@
 
 {% block content %}
     <h1>Blogs</h1>
+    <img src="{% static 'img/django.png' %}" alt="">
 {% endblock content %}
