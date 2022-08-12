@@ -11,10 +11,32 @@
     <title>{% block title %} {% endblock title %} | BlogApp</title>
 </head>
 <body>
-    
-    {% block content %}
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+        <div class="container">
+            <a href="{% url 'home' %}" class="navbar-brand">Blogapp</a>
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="{% url 'blogs' %}" class="nav-link">Blogs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-3">
+            <div class="list-group">
+                <a href="" class="list-group-item list-group-action">Programlama</a>
+                <a href="" class="list-group-item list-group-action">Web Programlama</a>
+                <a href="" class="list-group-item list-group-action">Mobil Uygulamalar</a>
+            </div>
+            </div>
+            <div class="col-9">
+                {% block content %}
         
-    {% endblock content %}
+                {% endblock content %}
+            </div>
+        </div>
+    
+    
     
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 </body>
